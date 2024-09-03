@@ -3,86 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Gaming Journal</title>
+    <title>The Retro Gamer's Journal</title>
     <style>
         body {
-            background-color: #f4f4f4;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
             color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 2px solid #000;
-            box-shadow: 5px 5px 0px 0px #888;
-        }
+
         header {
-            background-color: #000;
+            background-color: #444;
             color: #fff;
-            padding: 10px;
-            font-size: 24px;
-            border-bottom: 2px solid #888;
-        }
-        h1, h2 {
-            color: #000;
-        }
-        h1 {
+            padding: 20px 0;
+            text-align: center;
             font-size: 36px;
+            font-weight: bold;
         }
-        h2 {
-            font-size: 28px;
-            margin-top: 30px;
-            border-bottom: 2px dashed #000;
-            padding-bottom: 10px;
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            text-align: left;
-        }
-        .screenshot {
-            border: 2px solid #000;
-            margin: 20px 0;
-            box-shadow: 3px 3px 0px 0px #888;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #000;
+
+        nav a {
             color: #fff;
-            border-top: 2px solid #888;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            flex: 0 0 65%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .sidebar {
+            flex: 0 0 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .main-content h2 {
+            color: #444;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            margin-bottom: 15px;
+        }
+
+        .main-content img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .sidebar ul li:before {
+            content: '►';
+            margin-right: 10px;
+            color: #444;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
             font-size: 14px;
         }
     </style>
 </head>
 <body>
+    <header>
+        The Retro Gamer's Journal
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reviews</a>
+        <a href="#">Guides</a>
+        <a href="#">About</a>
+    </nav>
+
     <div class="container">
-        <header>
-            RETRO GAMING JOURNAL
-        </header>
-
-        <h1>Classic Games of the 90s</h1>
-
-        <h2>Spotlight: Super Cool Game</h2>
-        <p>Released in 1992, Super Cool Game took the world by storm with its innovative gameplay and stunning 16-bit graphics. It remains a fan favorite among retro gaming enthusiasts.</p>
-
-        <img src="screenshot.jpg" alt="Super Cool Game Screenshot" class="screenshot">
-
-        <h2>Cheat Codes and Tips</h2>
-        <p>Struggling to beat the final boss? Here are some tips to help you out:</p>
-        <ul>
-            <li><strong>Secret Level:</strong> Press Up, Up, Down, Down, Left, Right, Left, Right, B, A at the title screen.</li>
-            <li><strong>Extra Lives:</strong> Collect 100 coins to earn an extra life.</li>
-        </ul>
-
-        <footer>
-            &copy; 2024 Retro Gaming Journal. All rights reserved.
-        </footer>
+        <div class="content">
+            <div class="main-content">
+                <h2>Super Cool Game Review</h2>
+                <img src="screenshot.jpg" alt="Super Cool Game Screenshot">
+                <p>Super Cool Game, released in 1992, is an iconic title that still holds up today. Its unique gameplay and immersive world have cemented its place in gaming history...</p>
+                <p><a href="#">Read more...</a></p>
+            </div>
+            <div class="sidebar">
+                <h3>Latest Articles</h3>
+                <ul>
+                    <li><a href="#">Top 10 Retro Games of All Time</a></li>
+                    <li><a href="#">Cheat Codes You Never Knew Existed</a></li>
+                    <li><a href="#">Interview with a Retro Game Developer</a></li>
+                    <li><a href="#">How to Emulate Classic Games on Modern PCs</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        &copy; 2024 The Retro Gamer's Journal. All rights reserved.
+    </footer>
 </body>
 </html>
